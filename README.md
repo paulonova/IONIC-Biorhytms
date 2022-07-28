@@ -2,6 +2,8 @@
 
 This example is part of the Ionic React course.
 
+<img src="./src/images/screenshot.png">
+
 ## Links
 
 - [Biorhythm](https://en.wikipedia.org/wiki/Biorhythm) Wikipedia entry
@@ -77,7 +79,3 @@ Link: https://guides.cocoapods.org/using/getting-started.html#installation
   > npx cap open android
 
   keytool -genkey -v -keystore main.keystore -alias fastthumbs -keyalg RSA -keysize 2048 -validity 10000
-
-## IONIC FIREBASE
-
-Link: https://ionicframework.com/docs/native/firebase
