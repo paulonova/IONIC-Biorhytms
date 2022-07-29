@@ -13,6 +13,34 @@ This example is part of the Ionic React course.
 
 link: https://day.js.org/
 
+## Recharts js
+
+Link: https://recharts.org/en-US/
+
+## PUBLISHING THE BIORHYTHM
+
+- Create a Build folder
+
+> npm run build
+
+> npx serve -s build
+
+- You will receive an url for ex.
+  Local: http://localhost:3000  
+  On Your Network: http://192.168.0.102:3000
+
+* Now you have a Build forlder with your production App
+
+### Deploy the App in Netlify
+
+Link: https://app.netlify.com/
+
+Site: https://paulo-biorhythm.netlify.app/
+
+#######################################################################################
+###################### EXTRA INFORMATION ABOUT IONIC ############################
+#######################################################################################
+
 # Ionic-React-Model
 
 ## Links
