@@ -27,7 +27,7 @@ function App() {
           <BiorhythmCard targetDate={targetDate} birthDate={birthDate} />
         )}
         <IonItem>
-          <IonLabel position='fixed'>Date of Birth:</IonLabel>
+          <IonLabel position='fixed'>Birth Date:</IonLabel>
           <IonDatetime
             displayFormat='MMM DD YYYY'
             value={birthDate}

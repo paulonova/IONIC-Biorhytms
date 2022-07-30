@@ -1,46 +1,3 @@
-# Biorhythm Calculator
-
-This example is part of the Ionic React course.
-
-<img src="./src/images/screenshot.png">
-
-## Links
-
-- [Biorhythm](https://en.wikipedia.org/wiki/Biorhythm) Wikipedia entry
-- [Biorhythm Calculator](https://keisan.casio.com/exec/system/1340246447) by Casio
-
-## Date js
-
-link: https://day.js.org/
-
-## Recharts js
-
-Link: https://recharts.org/en-US/
-
-## PUBLISHING THE BIORHYTHM
-
-- Create a Build folder
-
-> npm run build
-
-> npx serve -s build
-
-- You will receive an url for ex.
-  Local: http://localhost:3000  
-  On Your Network: http://192.168.0.102:3000
-
-* Now you have a Build forlder with your production App
-
-### Deploy the App in Netlify
-
-Link: https://app.netlify.com/
-
-Site: https://paulo-biorhythm.netlify.app/
-
-#######################################################################################
-###################### EXTRA INFORMATION ABOUT IONIC ############################
-#######################################################################################
-
 # Ionic-React-Model
 
 ## Links
@@ -81,9 +38,25 @@ Link: https://cordova.apache.org/
 
 Link: https://capacitorjs.com/
 
+> npm install @capacitor/core@2.4.7 --save-exact
+
+> npm install @capacitor/cli@2.4.7 --save-exact --save-dev
+
 > ionic integrations enable capacitor
 
 > ionic build
+
+- To initialize Capacitor:
+
+> npx cap init --web-dir build --npm-client npm Biorhythms org.example.biorhythms
+
+### HOW TO UPDATE THE PROJECT IN ANDROID STUDIO
+
+- After changes, you need to run:
+
+> npm run build => To update the production folder
+
+> npx cap sync android => To sync build folder with the android project
 
 ### Install Cocoapods
 
@@ -106,4 +79,56 @@ Link: https://guides.cocoapods.org/using/getting-started.html#installation
 
   > npx cap open android
 
-  keytool -genkey -v -keystore main.keystore -alias fastthumbs -keyalg RSA -keysize 2048 -validity 10000
+#######################################################################################
+############################ EXTRA INFORMATION ABOUT IONIC ############################
+#######################################################################################
+
+# Biorhythm Calculator
+
+This example is part of the Ionic React course.
+
+<img src="./src/images/screenshot.png">
+
+## Links
+
+- [Biorhythm](https://en.wikipedia.org/wiki/Biorhythm) Wikipedia entry
+- [Biorhythm Calculator](https://keisan.casio.com/exec/system/1340246447) by Casio
+
+## Date js
+
+link: https://day.js.org/
+
+## Recharts js
+
+Link: https://recharts.org/en-US/
+
+## PUBLISHING THE BIORHYTHM
+
+- Create a Build folder
+
+> npm run build
+
+> npx serve -s build
+
+- You will receive an url for ex.
+  Local: http://localhost:3000  
+  On Your Network: http://192.168.0.102:3000
+
+* Now you have a Build forlder with your production App
+
+### Deploy the App in Netlify
+
+Link: https://app.netlify.com/
+
+Site: https://paulo-biorhythm.netlify.app/
+
+## Sync Visual Code with IOS emulator
+
+1 - Install Capacitor
+2 - In file capacitor.config.json add this code after cordova:
+
+> "server": {
+> "url": "http://192.168.0.102:3000"
+> }
+
+> npx cap open ios
