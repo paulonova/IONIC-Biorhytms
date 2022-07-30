@@ -132,3 +132,14 @@ Site: https://paulo-biorhythm.netlify.app/
 > }
 
 > npx cap open ios
+
+## CHANGE THE ICONS AND SPLASH IMAGES => Capacitor Assets (formerly cordova-res)
+
+<ul>
+  <li>Create a folde named resources</li>
+  <li>Insert there the new Icon and Splash image</li>
+  <li>Run this commands:</li>
+  <li>$ npx cordova-res android --skip-config --copy</li>
+  <li>$ npx cordova-res ios --skip-config --copy</li>
+  <li>We don´t need to sync, it happens automatic</li>
+</ul>
